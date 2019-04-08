@@ -1,0 +1,115 @@
+body {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  list-style-image: null;
+  font-weight: bold;
+}
+img {
+  height: 350px;
+  width: 200px;
+}
+a:hover {
+  cursor: pointer;
+}
+body {
+  color: #333;
+  font-family: "Bookman Old Style";
+  background-image: url(./1.jpg);
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  background-color: #464646;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.list li {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+.list li:last-child {
+  border: 0;
+}
+.list li:hover {
+  background-color: #2e2e2e;
+  color: white;
+}
+.heading {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 40px;
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #fcd000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+input[type="text"] {
+  width: 50%;
+  height: 30px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+
+input {
+  background-color: #464646;
+  color: white;
+}
+.myButton {
+  background-color: #464646;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: 1px solid #464646;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #464646;
+}
+.myButton:hover {
+  background-color: #999;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
